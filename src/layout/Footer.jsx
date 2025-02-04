@@ -1,50 +1,80 @@
-function Footer(){
-    return(
-        <>
-         <footer class="bg-dark text-white py-5">
-    <div class="container">
-      <div class="row">
-      
-        <div class="col-md-4 mb-4">
-          <h5 class="fw-bold">About Us</h5>
-          <p>
-            Welcome to Gourmet Delight! We serve the finest dishes with fresh ingredients and a touch of love. Join us for an unforgettable dining experience.
-          </p>
-        </div>
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {  faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-       
-        <div class="col-md-4 mb-4">
-          <h5 class="fw-bold">Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Menu</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Reservations</a></li>
-            <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
-          </ul>
-        </div>
+const Footer = () => {
+  return (
+    <footer className="bg-dark text-white py-5">
+      <div className="container">
+        <div className="row">
+          
+          
+          <div className="col-md-3 mb-4">
+            <h5 className="fw-bold">CONTACT US</h5>
+            <p> <b>Our Branches</b></p>
+            <ul className="list-unstyled text-light">
+              <li>A K Road</li>
+              <li>Yogi Chowk</li>
+              <li>Sarthana</li>
+              <li>Mota Varachha</li>
+              <li>Ved Road</li>
+              <li>Adajan</li>
+              <li>Dindoli</li>
+              <li>Vesu</li>
+            </ul>
+            <p><FontAwesomeIcon icon={faPhone} /> +91 7878 444 333</p>
+            <p><FontAwesomeIcon icon={faEnvelope} /> info@rnwmultimedia.edu.in</p>
+          </div>
 
-   
-        <div class="col-md-4 mb-4">
-          <h5 class="fw-bold">Contact Us</h5>
-          <p><i class="bi bi-geo-alt-fill"></i> 123 Food Street, Gourmet City</p>
-          <p><i class="bi bi-telephone-fill"></i> +123 456 7890</p>
-          <p><i class="bi bi-envelope-fill"></i> contact@gourmetdelight.com</p>
-          <div>
-            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+         
+          <div className="col-md-3 mb-4">
+            <h5 className="fw-bold">TRENDING COURSE</h5>
+            <ul className="list-unstyled text-light">
+              <li>GIM</li>
+              <li>PHP</li>
+              <li>Project Training Surat</li>
+              <li>Android Training Course</li>
+              <li>Web Designing Training</li>
+              <li>Full Stack Development</li>
+            </ul>
+          </div>
+
+          <div className="col-md-3 mb-4">
+            <h5 className="fw-bold">IMPORTANT PAGES</h5>
+            <ul className="list-unstyled text-light">
+              <li>Home</li>
+              <li>Contact Us</li>
+              <li>About Us</li>
+              <li>Blog</li>
+              <li>Events</li>
+              <li>Approval</li>
+              <li>Students T&C</li>
+              <li>Sitemap</li>
+              <li>Student Login</li>
+            </ul>
+          </div>
+
+         
+          <div className="col-md-3 mb-4">
+            <h5 className="fw-bold">BE RECRUITER</h5>
+            <ul className="list-unstyled">
+              <li> Company Login/Register</li>
+              <li> Company T&C</li>
+              <li> Placement Student Login</li>
+              <li> Placement Student T&C</li>
+            </ul>
+            <p><FontAwesomeIcon icon={faPhone} /> +91 93313 13196</p>
+            <p><FontAwesomeIcon icon={faEnvelope} /> placement@rnwmultimedia.edu.in</p>
           </div>
         </div>
+
+        <hr className="text-white" />
+        <div className="text-center">
+          <p className="mb-0">2025 RNW Multimedia. All Rights Reserved.</p>
+        </div>
       </div>
-      <hr class="text-white"/>
-      <div class="text-center">
-        <p class="mb-0">© 2025 Gourmet Delight. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
-        </>
-    )
-}
+    </footer>
+  );
+};
 
 export default Footer;
-    
