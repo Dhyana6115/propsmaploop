@@ -11,7 +11,7 @@ const CareerPage = () => {
       </h1>
       <div className="row  g-4 justify-content-center">
         {Career.map((item, index) => (
-          <div key={index} className="col-md-3 col-lg-2">
+          <div key={index} className="col-md-3 col-lg-2 col-sm-6">
             <CareerCardUi title={item.title} icon={item.icon} />
           </div>
         ))}
