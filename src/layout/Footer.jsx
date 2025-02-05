@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="row">
           
           
-          <div className="col-md-3 mb-4">
+          <div className="col-md-6 col-lg-3 mb-4">
             <h5 className="fw-bold">CONTACT US</h5>
             <p> <b>Our Branches</b></p>
             <ul className="list-unstyled text-light">
