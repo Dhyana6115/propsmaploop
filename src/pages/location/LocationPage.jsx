@@ -1,22 +1,27 @@
-import cities from "./Location";
-import CityCardUi from "./LocationCardUi";
+import LocationCardUi from "./LocationCardUi";
+import Location from "./Location";
 
 const LocationPage = () => {
     return (
-      <div className="container mt-5">
-        <h2 className="text-center mb-4">We are in</h2>
-        <div className="row">
-          {cities.map((cities, index) => (
-            <CityCardUi
-              key={index}
-              name={cities.name}
-              locations={cities.locations}
-              image={cities.image}
-            />
-          ))}
+      <>
+        <div className="container py-5  ">
+          <h1 className="text-dark  mb-4 text-center">
+          We are in
+          </h1>
+          <div className="row d-flex justify-content-center">
+            {Location.map((ele,index) => {
+              return (
+                <>
+                  <div className="col-lg-3 col-md-4 col-sm-6">
+                    <LocationCardUi key={index} icon={ele.icon} title={ele.title} para={ele.para} />
+                  </div>
+                </>
+              );
+            })}
+          </div>
         </div>
-      </div>
+      </>
     );
   };
-  
+
   export default LocationPage;
