@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="row">
           
           
-          <div className="col-md-6 col-lg-3 mb-4">
+          <div className="col-md-4 col-lg-3 col-sm-6  mb-4">
             <h5 className="fw-bold">CONTACT US</h5>
             <p> <b>Our Branches</b></p>
             <ul className="list-unstyled text-light">
@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
 
          
-          <div className="col-md-3 mb-4">
+          <div className="col-md-4 col-lg-3 col-sm-6 mb-4">
             <h5 className="fw-bold">TRENDING COURSE</h5>
             <ul className="list-unstyled text-light">
               <li>GIM</li>
@@ -39,7 +39,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-md-3 mb-4">
+          <div className="col-md-4 col-lg-3 col-sm-6 mb-4">
             <h5 className="fw-bold">IMPORTANT PAGES</h5>
             <ul className="list-unstyled text-light">
               <li>Home</li>
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
 
          
-          <div className="col-md-3 mb-4">
+          <div className="col-md-4 col-lg-3 col-sm-6 mb-4">
             <h5 className="fw-bold">BE RECRUITER</h5>
             <ul className="list-unstyled">
               <li> Company Login/Register</li>
